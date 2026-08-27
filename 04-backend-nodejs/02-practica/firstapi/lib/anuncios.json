@@ -1,0 +1,49 @@
+
+{
+    "anuncios": [
+        {
+            "nombre": "Bicicleta",
+            "venta": true,
+            "precio": 230.15,
+            "foto": "bici.jpg",
+            "tags": ["lifestyle", "motor"]
+        },
+        {
+            "nombre": "iPhone 3GS",
+            "venta": false,
+            "precio": 50.00,
+            "foto": "iphone.jpg",
+            "tags": ["lifestyle", "mobile"]
+        },
+        {
+            "nombre": "cacerola",
+            "venta": false,
+            "precio": 10.00,
+            "foto": "cacerola.jpg",
+            "tags": ["cocina", "hogar"]
+        },
+        {
+            "nombre": "mesa",
+            "venta": false,
+            "precio": 30.00,
+            "foto": "mesa.jpg",
+            "tags": ["muebles", "hogar"]
+        },
+        {
+            "nombre": "coche",
+            "venta": false,
+            "precio": 45.00,
+            "foto": "coche.jpg",
+            "tags": ["motor", "lifestyle"]
+        },
+        {
+            "nombre": "cometa",
+            "venta": false,
+            "precio": 30.00,
+            "foto": "cometa.jpg",
+            "tags": ["deporte", "lifestyle"]
+        }
+
+    ]
+}
+

@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FlixCoding</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/icons.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/cards.css" />
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <div class="logo">
+        <a href="#navbar">Flix<span>Coding</span></a>
+      </div>
+
+      <input type="checkbox" id="burger-checkbox" />
+      <label for="burger-checkbox" class="burger-label"></label>
+
+      <form class="search-form">
+        <input type="search" name="q" id="search-input" class="search-input" />
+        <label for="search-input">
+          <svg class="search-icon" viewBox="0 0 20 20">
+            <path
+              d="M18.125,15.804l-4.038-4.037c0.675-1.079,1.012-2.308,1.01-3.534C15.089,4.62,12.199,1.75,8.584,1.75C4.815,1.75,1.982,4.726,2,8.286c0.021,3.577,2.908,6.549,6.578,6.549c1.241,0,2.417-0.347,3.44-0.985l4.032,4.026c0.167,0.166,0.43,0.166,0.596,0l1.479-1.478C18.292,16.234,18.292,15.968,18.125,15.804 M8.578,13.99c-3.198,0-5.716-2.593-5.733-5.71c-0.017-3.084,2.438-5.686,5.74-5.686c3.197,0,5.625,2.493,5.64,5.624C14.242,11.548,11.621,13.99,8.578,13.99 M16.349,16.981l-3.637-3.635c0.131-0.11,0.721-0.695,0.876-0.884l3.642,3.639L16.349,16.981z"
+            ></path>
+          </svg>
+        </label>
+        <button class="search-submit">
+          <svg class="search-icon" viewBox="0 0 20 20">
+            <path
+              d="M18.125,15.804l-4.038-4.037c0.675-1.079,1.012-2.308,1.01-3.534C15.089,4.62,12.199,1.75,8.584,1.75C4.815,1.75,1.982,4.726,2,8.286c0.021,3.577,2.908,6.549,6.578,6.549c1.241,0,2.417-0.347,3.44-0.985l4.032,4.026c0.167,0.166,0.43,0.166,0.596,0l1.479-1.478C18.292,16.234,18.292,15.968,18.125,15.804 M8.578,13.99c-3.198,0-5.716-2.593-5.733-5.71c-0.017-3.084,2.438-5.686,5.74-5.686c3.197,0,5.625,2.493,5.64,5.624C14.242,11.548,11.621,13.99,8.578,13.99 M16.349,16.981l-3.637-3.635c0.131-0.11,0.721-0.695,0.876-0.884l3.642,3.639L16.349,16.981z"
+            ></path>
+          </svg>
+        </button>
+      </form>
+
+      <!-- <ul class="navbar-list">
+        <li class="navbar-item">
+          <a href="#trending">Popular</a>
+        </li>
+        <li class="navbar-item">
+          <a href="#shows">Series</a>
+        </li>
+        <li class="navbar-item">
+          <a href="#movies">Películas</a>
+        </li>
+        <li class="navbar-item">
+          <a href="#">Mi perfil</a>
+        </li>
+        <li class="navbar-item">
+          <a href="index.html">Cerrar sesión</a>
+        </li>
+      </ul> -->
+      <kc-main-menu class="navbar-list"></kc-main-menu>
+    </nav>
+
+    <header class="header"></header>
+
+    <main class="main">
+      <section id="trending" class="card-list">
+        <h1 class="section-title">Popular ahora mismo</h1>
+
+        <article class="info-card">
+          <a href="detail.html">
+            <div class="cover">
+              <img
+                src="img/covers/dolomites-4232729_640.jpg"
+                alt="Portada Frontend Imposible"
+              />
+            </div>
+            <div class="card-content">
+              <div class="title">Frontend Imposible</div>
+              <div class="meta">
+                <span class="rating">4.5/5</span>
+                <span class="age">PG-13</span>
+                <span class="pub-date">2017</span>
+              </div>
+              <div class="description">
+                In eu placerat sapien. Fusce dictum non purus vel eleifend. Sed
+                imperdiet sem nec ex vulputate ullamcorper.
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="info-card">
+          <a href="detail.html">
+            <div class="cover">
+              <img
+                src="img/covers/model-2333326_640.jpg"
+                alt="Portada Spans, divs y cintas de vídeo"
+              />
+            </div>
+            <div class="card-content">
+              <div class="title">Spans, divs y cintas de vídeo</div>
+              <div class="meta">
+                <span class="rating">4.5/5</span>
+                <span class="age">PG-13</span>
+                <span class="pub-date">2017</span>
+              </div>
+              <div class="description">
+                Aut in veniam esse doloribus repudiandae, veritatis perferendis
+                animi inventore, nam, voluptatibus iste sunt molestias error
+                odio dignissimos.
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="info-card">
+          <a href="detail.html">
+            <div class="cover">
+              <img
+                src="img/covers/roses-4238686_640.jpg"
+                alt="Portada Class Wars"
+              />
+            </div>
+            <div class="card-content">
+              <div class="title">Class Wars</div>
+              <div class="meta">
+                <span class="rating">4.5/5</span>
+                <span class="age">PG-13</span>
+                <span class="pub-date">2017</span>
+              </div>
+              <div class="description">
+                Iste magnam aperiam omnis ab quidem, fugiat laborum id molestias
+                quod nesciunt commodi eius culpa ut?
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="info-card favorite">
+          <a href="detail.html">
+            <div class="cover">
+              <img
+                src="img/covers/montmartre-1079246_640.jpg"
+                alt="Portada Black Flexbox"
+              />
+            </div>
+            <div class="card-content">
+              <div class="title">Black Flexbox</div>
+              <div class="meta">
+                <span class="rating">4.5/5</span>
+                <span class="age">PG-13</span>
+                <span class="pub-date">2017</span>
+              </div>
+              <div class="description">
+                Incidunt, vitae nisi architecto vero dicta iste similique sit
+                aspernatur laudantium labore perspiciatis velit.
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="info-card">
+          <a href="detail.html">
+            <div class="cover">
+              <img
+                src="img/covers/wallpaper-4301176_640.jpg"
+                alt="Portada Div of Thrones"
+              />
+            </div>
+            <div class="card-content">
+              <div class="title">Div of Thrones</div>
+              <div class="meta">
+                <span class="rating">4.5/5</span>
+                <span class="age">PG-13</span>
+                <span class="pub-date">2017</span>
+              </div>
+              <div class="description">
+                Nunc aliquet non eros non auctor. Donec varius ornare lorem in
+                consectetur. Integer in consectetur felis.
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="info-card">
+          <a href="detail.html">
+            <div class="cover">
+              <img
+                src="img/covers/dandelion-4120515_640.jpg"
+                alt="Portada Mad Grid"
+              />
+            </div>
+            <div class="card-content">
+              <div class="title">Mad Grid</div>
+              <div class="meta">
+                <span class="rating">4.5/5</span>
+                <span class="age">PG-13</span>
+                <span class="pub-date">2017</span>
+              </div>
+              <div class="description">
+                Praesent lobortis massa consectetur, tincidunt nibh ac,
+                pellentesque dui. Phasellus lacinia condimentum arcu nec mollis.
+                Suspendisse quis, id porta enim.
+              </div>
+            </div>
+          </a>
+        </article>
+      </section>
+
+      <section id="shows" class="card-list">
+        <h1 class="section-title">Series</h1>
+
+        <article class="info-card favorite">
+          <a href="detail.html">
+            <div class="cover">
+              <img
+                src="img/covers/dolomites-4232729_640.jpg"
+                alt="Portada Phantom Class"
+              />
+            </div>
+            <div class="card-content">
+              <div class="title">Phantom Class</div>
+              <div class="meta">
+                <span class="rating">4.5/5</span>
+                <span class="age">PG-13</span>
+                <span class="pub-date">2017</span>
+              </div>
+              <div class="description">
+                Donec ac lobortis turpis, ac mattis purus. Class aptent taciti
+                sociosqu ad litora torquent per conubia nostra, per inceptos
+                himenaeos.
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="info-card favorite">
+          <a href="detail.html">
+            <div class="cover">
+              <img
+                src="img/covers/model-2333326_640.jpg"
+                alt="Portada En Busca del Src Perdida"
+              />
+            </div>
+            <div class="card-content">
+              <div class="title">En Busca del Src Perdida</div>
+              <div class="meta">
+                <span class="rating">4.5/5</span>
+                <span class="age">PG-13</span>
+                <span class="pub-date">2017</span>
+              </div>
+              <div class="description">
+                Curabitur ut felis fermentum, congue ligula in, gravida sapien.
+                Praesent sed augue massa.
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="info-card">
+          <a href="detail.html">
+            <div class="cover">
+              <img
+                src="img/covers/roses-4238686_640.jpg"
+                alt="Portada Los Resets"
+              />
+            </div>
+            <div class="card-content">
+              <div class="title">Los Resets</div>
+              <div class="meta">
+                <span class="rating">4.5/5</span>
+                <span class="age">PG-13</span>
+                <span class="pub-date">2017</span>
+              </div>
+              <div class="description">
+                Aliquam bibendum rutrum tempor. Ut consequat et erat vitae
+                auctor. Suspendisse ullamcorper lectus sit amet imperdiet
+                venenatis.
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="info-card">
+          <a href="detail.html">
+            <div class="cover">
+              <img
+                src="img/covers/montmartre-1079246_640.jpg"
+                alt="Portada Video Cards"
+              />
+            </div>
+            <div class="card-content">
+              <div class="title">Video Cards</div>
+              <div class="meta">
+                <span class="rating">4.5/5</span>
+                <span class="age">PG-13</span>
+                <span class="pub-date">2017</span>
+              </div>
+              <div class="description">
+                Integer sollicitudin volutpat viverra. In tincidunt id nibh quis
+                ullamcorper. Praesent tincidunt commodo urna eget accumsan.
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="info-card">
+          <a href="detail.html">
+            <div class="cover">
+              <img
+                src="img/covers/wallpaper-4301176_640.jpg"
+                alt="Portada Modern Browsers"
+              />
+            </div>
+            <div class="card-content">
+              <div class="title">Modern Browsers</div>
+              <div class="meta">
+                <span class="rating">4.5/5</span>
+                <span class="age">PG-13</span>
+                <span class="pub-date">2017</span>
+              </div>
+              <div class="description">
+                Quisque ullamcorper maximus lacinia. Maecenas aliquam consequat
+                vehicula. Aenean urna quam, fringilla id aliquam nec, luctus eu
+                nunc.
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="info-card">
+          <a href="detail.html">
+            <div class="cover">
+              <img
+                src="img/covers/dandelion-4120515_640.jpg"
+                alt="Portada Stranger Divs"
+              />
+            </div>
+            <div class="card-content">
+              <div class="title">Stranger Divs</div>
+              <div class="meta">
+                <span class="rating">4.5/5</span>
+                <span class="age">PG-13</span>
+                <span class="pub-date">2017</span>
+              </div>
+              <div class="description">
+                Mauris porta velit felis. Nullam pretium et justo non pretium.
+                Integer sollicitudin volutpat viverra.
+              </div>
+            </div>
+          </a>
+        </article>
+      </section>
+
+      <section id="movies" class="card-list">
+        <h1 class="section-title">Películas</h1>
+
+        <article class="info-card">
+          <a href="detail.html">
+            <div class="cover">
+              <img
+                src="img/covers/dolomites-4232729_640.jpg"
+                alt="Portada The Walking Gaps"
+              />
+            </div>
+            <div class="card-content">
+              <div class="title">The Walking Gaps</div>
+              <div class="meta">
+                <span class="rating">4.5/5</span>
+                <span class="age">PG-13</span>
+                <span class="pub-date">2017</span>
+              </div>
+              <div class="description">
+                Curabitur mi felis, posuere ac nibh eu, ultricies finibus eros.
+                Integer lectus metus, dictum eu convallis sed, accumsan rhoncus
+                turpis.
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="info-card">
+          <a href="detail.html">
+            <div class="cover">
+              <img
+                src="img/covers/model-2333326_640.jpg"
+                alt="Portada The Good Quote"
+              />
+            </div>
+            <div class="card-content">
+              <div class="title">The Good Quote</div>
+              <div class="meta">
+                <span class="rating">4.5/5</span>
+                <span class="age">PG-13</span>
+                <span class="pub-date">2017</span>
+              </div>
+              <div class="description">
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                posuere cubilia Curae; Donec quis varius mi, sed euismod arcu.
+                Nunc lobortis et nisl a tincidunt.
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="info-card">
+          <a href="detail.html">
+            <div class="cover">
+              <img
+                src="img/covers/roses-4238686_640.jpg"
+                alt="Portada Block in Display"
+              />
+            </div>
+            <div class="card-content">
+              <div class="title">Block in Display</div>
+              <div class="meta">
+                <span class="rating">4.5/5</span>
+                <span class="age">PG-13</span>
+                <span class="pub-date">2017</span>
+              </div>
+              <div class="description">
+                Nulla nec leo id mauris congue fringilla semper eget metus. Sed
+                id sapien accumsan, aliquet dolor vel, aliquet massa.
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="info-card">
+          <a href="detail.html">
+            <div class="cover">
+              <img
+                src="img/covers/montmartre-1079246_640.jpg"
+                alt="Portada The Fullstack Developer"
+              />
+            </div>
+            <div class="card-content">
+              <div class="title">The Fullstack Developer</div>
+              <div class="meta">
+                <span class="rating">4.5/5</span>
+                <span class="age">PG-13</span>
+                <span class="pub-date">2017</span>
+              </div>
+              <div class="description">
+                Pellentesque dapibus neque ac neque egestas porta. Vestibulum
+                laoreet nunc quam, sed semper nisi consequat vitae.
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="info-card">
+          <a href="detail.html">
+            <div class="cover">
+              <img
+                src="img/covers/wallpaper-4301176_640.jpg"
+                alt="Portada Tales of HTML"
+              />
+            </div>
+            <div class="card-content">
+              <div class="title">Tales of HTML</div>
+              <div class="meta">
+                <span class="rating">4.5/5</span>
+                <span class="age">PG-13</span>
+                <span class="pub-date">2017</span>
+              </div>
+              <div class="description">
+                Suspendisse lobortis ex ac convallis tempus. Donec at ornare
+                nulla, sit amet hendrerit erat. Etiam maximus purus sed
+                ultricies pharetra.
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="info-card">
+          <a href="detail.html">
+            <div class="cover">
+              <img
+                src="img/covers/dandelion-4120515_640.jpg"
+                alt="Portada Orphan Lines"
+              />
+            </div>
+            <div class="card-content">
+              <div class="title">Orphan Lines</div>
+              <div class="meta">
+                <span class="rating">4.5/5</span>
+                <span class="age">PG-13</span>
+                <span class="pub-date">2017</span>
+              </div>
+              <div class="description">
+                Etiam maximus purus sed ultricies pharetra. Aliquam quis
+                molestie orci. In et justo quis augue sagittis faucibus. Sed
+                scelerisque.
+              </div>
+            </div>
+          </a>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <ul class="legal-links">
+        <li><a href="#">Privacidad</a></li>
+        <li><a href="#">Condiciones de uso</a></li>
+        <li><a href="#">Cookies</a></li>
+      </ul>
+    </footer>
+
+    <script src="./js/main-menu.js"></script>
+  </body>
+</html>

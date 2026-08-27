@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #pruebame {
+        background-color: orange;
+        border: 0;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+        padding: 0.5rem 1.5rem;
+        position: static;
+      }
+
+      #title {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="pruebame" class="btn">Pruébame</button>
+
+    <kc-popup id="mipopup">
+      <span slot="title">Hola keepcoders!</span>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolorem
+        non porro ea dolore impedit esse exercitationem provident ab, odit
+        praesentium ratione nostrum fuga molestiae? Consequatur sint tempora
+        doloribus cumque.
+      </p>
+    </kc-popup>
+    <script src="./popup.component.js"></script>
+
+    <script>
+      const button = document.getElementById('pruebame');
+      button.addEventListener('click', () => {
+        const popup = document.getElementById('mipopup');
+        popup.open = true;
+      });
+    </script>
+  </body>
+</html>

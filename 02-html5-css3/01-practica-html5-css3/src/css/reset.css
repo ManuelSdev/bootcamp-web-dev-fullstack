@@ -1,0 +1,39 @@
+/*
+box-sizing de
+https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+*/
+
+html
+{
+   box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+   box-sizing: inherit;
+}
+/*body sin espaciadis*/
+body
+{
+    margin: 0;
+    padding: 0;
+   
+}
+
+/*elementos media, responsive*/
+img,
+video
+{
+    max-width: 100%;
+    
+}
+
+/*Listas*/
+ul
+{
+    list-style: none;
+
+    
+}
+

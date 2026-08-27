@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FlixCoding</title>
+
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/forms.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+
+    <style>
+      kc-popup.content {
+        color: #444444;
+      }
+
+      kc-popup::part(resaltado) {
+        font-family: Arial, Helvetica, sans-serif;
+        color: blue;
+      }
+
+      kc-popup::part(contenido) {
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo">Flix<span>Coding</span></div>
+      </header>
+      <main class="main">
+        <section class="login-form">
+          <h1>Accede a tu cuenta</h1>
+          <form action="home.html">
+            <div class="form-group">
+              <label for="username">Usuario</label>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Usuario o dirección de correo electrónico"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="password">Contraseña</label>
+              <input
+                required
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Escribe tu contraseña"
+              />
+            </div>
+
+            <div class="form-group checkbox">
+              <input type="checkbox" name="remember" id="remember" />
+              <label for="remember">Recuérdame</label>
+            </div>
+
+            <div class="form-actions">
+              <input type="submit" value="Acceder" class="btn-primary" />
+              <a href="#" class="lost-password">¿Olvidaste tu contraseña?</a>
+            </div>
+          </form>
+          <footer class="signup-link">
+            <p>¿No tienes cuenta? <a href="#">¡Regístrate ahora!</a></p>
+          </footer>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <ul class="legal-links">
+          <li><a id="privacy-link">Privacidad</a></li>
+          <li><a href="#">Condiciones de uso</a></li>
+          <li><a href="#">Cookies</a></li>
+        </ul>
+      </footer>
+    </div>
+    <kc-popup id="privacy-popup" class="content">
+      <h2 slot="title">Privacy policy</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio nisi
+      </p>
+      <p>
+        Voluptates, necessitatibus. Possimus labore voluptas perferendis
+      </p>
+      <p>
+        Cum officia inventore quam, nemo quasi reprehenderit tempore quod quas  
+      </p>
+    </kc-popup>
+  </body>
+  <script src="./js/popup.component.js"></script>
+  <script src="./js/home.js"></script>
+</html>

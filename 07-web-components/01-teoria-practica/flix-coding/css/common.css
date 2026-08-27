@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:200,400,700&display=swap');
+
+body {
+  font-family: 'Libre Franklin', Arial, Helvetica, sans-serif;
+  font-size: var(--font-size);
+  font-weight: 400;
+  color: red; /*var(--text-color);*/
+  background: var(--bg-color); /* fallback for old browsers */
+  background: fixed -webkit-linear-gradient(to bottom, #24243e, #302b63, var(--bg-color)); /* Chrome 10-25, Safari 5.1-6 */
+  background: fixed
+    linear-gradient(to bottom, #24243e, #302b63, var(--bg-color)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+a {
+  color: var(--brand-color);
+  text-decoration: none;
+}
+
+.logo,
+.logo a {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin: 1rem;
+  color: var(--alt-color);
+}
+
+.logo span {
+  font-weight: 200;
+  color: var(--brand-color);
+}
+
+/* Ninguna imagen mayor que el ancho de pantalla */
+img {
+  max-width: 100%;
+}
+
+@media (hover: hover) {
+  .logo:hover,
+  .logo:hover a {
+    color: var(--brand-color);
+    transition: all ease-in-out 0.2s;
+  }
+
+  .logo:hover span {
+    color: var(--alt-color);
+    transition: all ease-in-out 0.2s;
+  }
+}

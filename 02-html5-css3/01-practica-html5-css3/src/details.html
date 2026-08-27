@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hammersmith One">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/details.css">
+
+    <title>Document</title>
+</head>
+<body>
+   <header class="header">
+       <nav id="nav" class="nav">
+           <div class="nav-left-wrapper">
+                <a class="logo-icon" href="main.html">
+                    <img class="logo-icon" src="images/logo.png">
+                </a>
+                <!--
+                <form class="searchBar">
+                    <imput type="text" id="searchImput" class="searchImput"/>
+                    <button type="submit" class="searchButtom"></button>
+                </form>
+                -->
+                <ul class="nav-list">
+                    <li class="nav-item">Novedades</li>
+                    <li class="nav-item">Series</li>
+                    <li class="nav-item">Péliculas</li>
+                    <li class="nav-item">Favoritos</li>
+                </ul>
+           </div>
+           <div class="nav-right-wrapper">
+                <div class="search">
+                    <img class="search-icon" src="../images/search.png"/>
+                    <form class="search-form">
+                        <input type="text" id="search-input" class="search-input"/>
+                        <!--<button type="submit" class="search-buttom"></button>-->
+                    </form>
+                </div>
+                <div class="user-icon">
+                    <img class="search-icon" src="images/user.png"/>
+                </div>
+           </div>
+
+       </nav>
+   </header>
+   <main class="main-details-page">
+        <section class="details-summary">
+            <div class="details-wrapper">
+                <div class="summary-wrapper">
+                    <p class="movie-stars"><span class="summary-tags">Calificación </span>&#x1f7c9 &#x1f7c9 &#x1f7c9 &#x1f7c9 &#x1f7c9</p>
+                    <p class="movie-title"><span class="summary-tags">Título: </span>Vikingos</p>
+                    <p class="movie-year"><span class="summary-tags">Año: </span>2013</p>
+                    <p class="movie-cast">
+                        <span class="summary-tags">Reparto: </span>
+                        Travis Fimmel, Katheryn Winnick, Gustaf Skarsgård, Alexander Ludwig
+                    </p>
+                    <p class="movie-synopsis">
+                        <span class="summary-tags">Sinopsis: </span>
+                        Narra las aventuras del héroe Ragnar Lothbrok, de sus hermanos vikingos y su familia,
+                        cuando él se subleva para convertirse en el rey de las tribus vikingas.
+                        Además de ser un guerrero valiente, Ragnar encarna las tradiciones nórdicas de la devoción a los dioses.
+                        Según la leyenda era descendiente directo del dios Odín
+                    </p>
+                    
+                    <div class="summary-movie-buttons">
+                        <button class="summary-play-button">
+                            <span class="play-symbol">&#x2bc8 </span>  Reproducir
+                        </button>      
+                    </div>
+                </div>
+
+                <div class="details-trailer-wrapper">
+                    <!--mete autoplay loop-->
+                    <video autoplay  id="video-trailer">
+                        <source src="videos/trailer.mp4" type="video/mp4">
+                    </video>
+                </div>
+                
+            </div>
+            
+        </section>
+   <!--
+       <section id="main-trailer">
+           <!--mete autoplay loop--
+        <video   id="video-trailer">
+            <source src="videos/trailer.mp4" type="video/mp4">
+        </video>
+    </section>
+   -->
+
+
+
+   </main>
+
+</body>
+</html>

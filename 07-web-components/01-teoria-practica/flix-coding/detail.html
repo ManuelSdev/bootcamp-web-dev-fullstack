@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FlixCoding - Detalle</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/detail.css" />
+  </head>
+  <body itemscope itemtype="http://schema.org/Movie">
+    <nav class="navbar" id="navbar">
+      <div class="logo">
+        <a href="home.html#navbar">Flix<span>Coding</span></a>
+      </div>
+
+      <input type="checkbox" id="burger-checkbox" />
+      <label for="burger-checkbox" class="burger-label"></label>
+
+      <!-- <ul class="navbar-list">
+        <li class="navbar-item"><a href="home.html#trending">Popular</a></li>
+        <li class="navbar-item"><a href="home.html#shows">Series</a></li>
+        <li class="navbar-item"><a href="home.html#movies">Películas</a></li>
+        <li class="navbar-item"><a href="#">Mi perfil</a></li>
+        <li class="navbar-item"><a href="index.html">Cerrar sesión</a></li>
+      </ul> -->
+      <kc-main-menu class="navbar-list"></kc-main-menu>
+    </nav>
+
+    <header class="header">
+      <div class="background-video">
+        <video
+          class="video-cover"
+          poster="img/covers/dandelion-4120515_640.jpg"
+          autoplay="autoplay"
+          loop="loop"
+          itemprop="trailer"
+          itemscope="https://schema.org/VideoObject"
+        >
+          <source src="video/hanging-bridge.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </header>
+
+    <main class="main">
+      <section>
+        <header class="movie-header">
+          <h1 itemprop="name">Frontend Imposible</h1>
+          <div class="meta">
+            <div class="meta-year">2017</div>
+            <div class="meta-rating">4.5/5</div>
+            <div class="meta-maturity">+16</div>
+            <div class="casting">
+              <ul
+                itemprop="actors"
+                itemscope
+                itemtype="http://schema.org/Person"
+              >
+                <li itemprop="name">Gustavo de básica</li>
+                <li itemprop="name">Lola Mento</li>
+                <li itemprop="name">Aitor Tilla</li>
+                <li itemprop="name">Concha Quetón</li>
+                <li itemprop="name">Elena Nito del Bosque</li>
+              </ul>
+            </div>
+            <div class="movie-poster">
+              <img
+                src="img/covers/dandelion-4120515_640.jpg"
+                alt="Carátula de la película"
+                itemprop="image"
+              />
+            </div>
+            <div class="actions">
+              <a href="#" class="btn btn-play">Ver ahora</a>
+            </div>
+          </div>
+        </header>
+        <article class="movie-overview" itemprop="description">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
+            alias, est error nemo aliquid hic assumenda ex natus obcaecati,
+            sapiente, eveniet atque optio doloremque quo officiis consequuntur
+            qui? Beatae, aliquid!
+          </p>
+          <p>
+            Aut in veniam esse doloribus repudiandae, veritatis perferendis
+            animi inventore, nam, voluptatibus iste sunt molestias error odio
+            dignissimos. A sapiente obcaecati magnam! Eligendi officia
+            aspernatur odio ex, possimus repellat cupiditate?
+          </p>
+          <p>
+            Incidunt, vitae nisi architecto vero dicta iste similique sit
+            aspernatur laudantium labore perspiciatis velit. Iste magnam aperiam
+            omnis ab quidem, fugiat laborum id molestias quod nesciunt commodi
+            eius culpa ut?
+          </p>
+        </article>
+
+        <aside class="related card-list">
+          <h1 class="section-title">Te podría interesar</h1>
+          <div class="info-card">
+            <a href="detail.html">
+              <div class="cover">
+                <img
+                  src="img/covers/dolomites-4232729_640.jpg"
+                  alt="Portada Spans, divs y cintas de vídeo"
+                />
+              </div>
+              <div class="card-content">
+                <div class="title">Spans, divs y cintas de vídeo</div>
+                <div class="meta">
+                  <span class="rating">4.5/5</span>
+                  <span class="pub-date">2017</span>
+                </div>
+                <div class="description">
+                  Aut in veniam esse doloribus repudiandae, veritatis
+                  perferendis animi inventore, nam, voluptatibus iste sunt
+                  molestias error odio dignissimos.
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="info-card">
+            <a href="detail.html">
+              <div class="cover">
+                <img
+                  src="img/covers/model-2333326_640.jpg"
+                  alt="Portada Class Wars"
+                />
+              </div>
+              <div class="card-content">
+                <div class="title">Class Wars</div>
+                <div class="meta">
+                  <span class="rating">4.5/5</span>
+                  <span class="pub-date">2017</span>
+                </div>
+                <div class="description">
+                  Iste magnam aperiam omnis ab quidem, fugiat laborum id
+                  molestias quod nesciunt commodi eius culpa ut?
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="info-card">
+            <a href="detail.html">
+              <div class="cover">
+                <img
+                  src="img/covers/roses-4238686_640.jpg"
+                  alt="Portada Black Flexbox"
+                />
+              </div>
+              <div class="card-content">
+                <div class="title">Black Flexbox</div>
+                <div class="meta">
+                  <span class="rating">4.5/5</span>
+                  <span class="pub-date">2017</span>
+                </div>
+                <div class="description">
+                  Incidunt, vitae nisi architecto vero dicta iste similique sit
+                  aspernatur laudantium labore perspiciatis velit.
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="info-card">
+            <a href="detail.html">
+              <div class="cover">
+                <img
+                  src="img/covers/montmartre-1079246_640.jpg"
+                  alt="Portada Div of Thrones"
+                />
+              </div>
+              <div class="card-content">
+                <div class="title">Div of Thrones</div>
+                <div class="meta">
+                  <span class="rating">4.5/5</span>
+                  <span class="pub-date">2017</span>
+                </div>
+                <div class="description">
+                  Nunc aliquet non eros non auctor. Donec varius ornare lorem in
+                  consectetur. Integer in consectetur felis.
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="info-card">
+            <a href="detail.html">
+              <div class="cover">
+                <img
+                  src="img/covers/wallpaper-4301176_640.jpg"
+                  alt="Portada Mad Grid"
+                />
+              </div>
+              <div class="card-content">
+                <div class="title">Mad Grid</div>
+                <div class="meta">
+                  <span class="rating">4.5/5</span>
+                  <span class="pub-date">2017</span>
+                </div>
+                <div class="description">
+                  Praesent lobortis massa consectetur, tincidunt nibh ac,
+                  pellentesque dui. Phasellus lacinia condimentum arcu nec
+                  mollis. Suspendisse quis, id porta enim.
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="info-card">
+            <a href="detail.html">
+              <div class="cover">
+                <img
+                  src="img/covers/dandelion-4120515_640.jpg"
+                  alt="Portada Phantom Class"
+                />
+              </div>
+              <div class="card-content">
+                <div class="title">Phantom Class</div>
+                <div class="meta">
+                  <span class="rating">4.5/5</span>
+                  <span class="pub-date">2017</span>
+                </div>
+                <div class="description">
+                  Donec ac lobortis turpis, ac mattis purus. Class aptent taciti
+                  sociosqu ad litora torquent per conubia nostra, per inceptos
+                  himenaeos.
+                </div>
+              </div>
+            </a>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <ul class="legal-links">
+        <li><a href="#">Privacidad</a></li>
+        <li><a href="#">Condiciones de uso</a></li>
+        <li><a href="#">Cookies</a></li>
+      </ul>
+    </footer>
+    <script src="./js/main-menu.js"></script>
+  </body>
+</html>

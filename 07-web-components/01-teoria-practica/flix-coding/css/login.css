@@ -1,0 +1,63 @@
+/* Distribución del espacio */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* justify-content: space-evenly; */
+}
+
+.header {
+    flex: 1 15%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    flex: 1 70%;
+}
+
+.footer {
+    flex: 1 15%;
+}
+
+/* El formulario */
+
+.login-form {
+    min-width: 300px;
+    max-width: 480px;
+    margin: auto;
+}
+
+.login-form h1 {
+    text-align: center;
+    color: var(--brand-color);
+}
+
+.form-actions {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.form-actions .lost-password {
+  margin-left: .5rem;
+  text-align: right;
+}
+
+
+@media (min-width: 567px) {
+    .container {
+        background: url(../img/trees-3458478_1280.jpg) center center;
+        background-size: cover;
+    }
+
+    .login-form {
+        padding: 2rem;
+        background-color: rgba(0, 0, 0, .75);
+        /* border-radius: 1rem; */
+    }
+}

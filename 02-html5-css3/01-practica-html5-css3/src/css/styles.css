@@ -1,0 +1,40 @@
+
+
+@import url(header.css);
+
+
+
+
+:root
+{
+    --nav-height:150px;
+   
+}
+
+/*
+    HEADER - INCLUYE BARRA NAV
+*/
+
+
+main{
+    width: 100%;
+}
+
+html, body{
+    height: 100%;
+    background:  #3A6073; 
+    font-family: 'Hammersmith One', serif;
+    color: seashell;
+}
+
+.main-page, .main-details-page
+{
+    margin-top: var(--nav-height);
+  position: static;
+
+}
+
+
+
+
+  

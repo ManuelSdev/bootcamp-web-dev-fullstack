@@ -1,0 +1,30 @@
+@import "variables";
+@import "~bootstrap/scss/bootstrap";
+
+ul {
+  list-style-type: none;
+  &#games-list li {
+    display: inline-block;
+  }
+}
+
+.game-name {
+  color: darkorange;
+  &:hover{
+    color: orange;
+  }
+}
+
+.game-snippet {
+  .game-snippet-container, .game-name {
+    text-align: center;
+  }
+  max-width: $maxWidthSnippet;
+  .game-name {
+    max-width: $maxWidthSnippet;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+  }
+}

@@ -1,0 +1,28 @@
+ul {
+  list-style-type: none;
+}
+ul#games-list li {
+  display: inline-block;
+}
+
+.game-name {
+  color: darkorange;
+}
+.game-name:hover {
+  color: orange;
+}
+
+.game-snippet {
+  max-width: 220px;
+}
+.game-snippet .game-snippet-container, .game-snippet .game-name {
+  text-align: center;
+}
+.game-snippet .game-name {
+  max-width: 220px;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=styles.css.map */

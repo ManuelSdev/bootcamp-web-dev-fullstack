@@ -1,0 +1,18 @@
+:root {
+    --font-size: 16px;
+    --bg-color: #0f0c29;
+    --text-color: #EFEFEF;
+    --brand-color: rgb(255, 215, 0);
+    --brand-overlay: var(--bg-color);
+    --alt-color: #3388FF;
+    --border-color: #EFEFEF;
+    --border-radius: 5px;
+
+    --screen-sm-min: 576px;
+    --screen-md-min: 768px;
+    --screen-lg-min: 992px;
+    --screen-xl-min: 1200px;
+
+    /* margen 1rem * 2 + letra logo 2.5rem = 4.5rem */
+    --header-height: 5rem;
+}

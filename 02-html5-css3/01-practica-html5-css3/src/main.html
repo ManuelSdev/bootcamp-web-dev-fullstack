@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hammersmith One">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/movies.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <nav id="nav" class="nav">
+            <div class="nav-left-wrapper">
+                 <a class="logo-icon" href="main.html">
+                     <img class="logo-icon" src="images/logo.png">
+                 </a>
+                 <!--
+                 <form class="searchBar">
+                     <imput type="text" id="searchImput" class="searchImput"/>
+                     <button type="submit" class="searchButtom"></button>
+                 </form>
+                 -->
+                 <ul class="nav-list">
+                     <li class="nav-item">Novedades</li>
+                     <li class="nav-item">Series</li>
+                     <li class="nav-item">Péliculas</li>
+                     <li class="nav-item">Favoritos</li>
+                 </ul>
+            </div>
+            <div class="nav-right-wrapper">
+                 <div class="search">
+                     <img class="search-icon" src="../images/search.png"/>
+                     <form class="search-form">
+                         <input type="text" id="search-input" class="search-input"/>
+                         <!--<button type="submit" class="search-buttom"></button>-->
+                     </form>
+                 </div>
+                 <div class="user-icon">
+                     <img class="search-icon" src="images/user.png"/>
+                 </div>
+            </div>
+ 
+        </nav>
+    </header>
+   <main class="main-page">
+       <section id="main-trailer">
+           <!-- autoplay loop-->
+           <video autoplay  id="video-trailer">
+               <source src="videos/trailer.mp4" type="video/mp4">
+           </video>
+       </section>
+       <!--
+        *****CAMBIA A CARRUSEL DE UNA SOLA FOTO GRANDE*************
+<section class="carousel">
+           <div id="scroll-block">
+               <div class="test">
+                    <div class="carousel-scroll">
+                            <ul class="carousel-list">
+                                <li class="carousel-item">
+                                    <a href="">
+                                        <img class="carousel-img" src="images/movies/carousel/thrones.jpg"/>
+                                    </a>
+                                </li>
+                                <li class="carousel-item">
+                                    <a href="">
+                                        <img class="carousel-img" src="images/movies/carousel/thrones.jpg"/>
+                                    </a>
+                                </li>
+                                <li class="carousel-item">
+                                    <a href="">
+                                        <img class="carousel-img" src="images/movies/carousel/thrones.jpg"/>
+                                    </a>
+                                </li>
+                                <li class="carousel-item">
+                                    <a href="">
+                                        <img class="carousel-img" src="images/movies/carousel/thrones.jpg"/>
+                                    </a>
+                                </li>
+                                <li class="carousel-item">
+                                    <a href="">
+                                        <img class="carousel-img" src="images/movies/carousel/thrones.jpg"/>
+                                    </a>
+                                </li>
+                                <li class="carousel-item">
+                                    <a href="">
+                                        <img class="carousel-img" src="images/movies/carousel/thrones.jpg"/>
+                                    </a>
+                                </li>                                         
+                            </ul>
+
+                    </div>  
+                    <div class="scroll-button">
+                        
+
+                    </div>
+                </div>        
+           </div>
+       </section>
+
+       -->
+       
+       <section  class="movies">
+           <!--Los contenedores "movie-wrapper" permiten ser redimensionados mediante hover desde CSS (adquiriendo
+            position:absolute) sin afectar al flujo del grid, como si ocurre al redimensionar directamente los 
+            "grid-item"-->
+            <div class="grid-container">
+                <div class="grid-item">
+        
+                    <div class="movie-wrapper">
+                        <!--img-wrapper + position:relative permite englobar a los siguientes position-absolute, de manera
+                        que no alteren su posición basada en top/bottom al redimensionar los contenedores superiores-->
+                        <a class="details-link" href="details.html">
+                        <div class="img-wrapper">
+                            <img class="grid-img-title-top" src="images/titles/stranger.png" />
+                            <img class="grid-img" src="images/covers/stranger.jpg" />  
+                        </div>
+                        </a>
+        
+                        <div class="movie-info">
+                            <div class="fav-icon"></div>
+                            <p class="movie-stars">&#x1f7c9 &#x1f7c9 &#x1f7c9 &#x1f7c9 &#x1f7c9</p>
+                            <p class="movie-title">Stranger things</p>
+                            <p class="movie-year">2016</p>
+                            <p class="movie-synopsis">Es la historia de un niño que desaparece en el pequeño pueblo de Hawkins, Indiana, sin dejar rastro en 1983.
+                                En su búsqueda desesperada, tanto sus amigos y familiares como el sheriff local se ven envueltos en un enigma extraordinario:
+                                experimentos ultra ...
+                                </p>
+                        </div>     
+                    </div>
+                </div>
+                <div class="grid-item">
+      
+                    <div class="movie-wrapper">
+                        <!--img-wrapper + position:relative permite englobar a los siguientes position-absolute, de manera
+                        que no alteren su posición basada en top/bottom al redimensionar los contenedores superiores-->
+                        
+                        <a class="details-link" href="details.html">
+                            <div class="img-wrapper">
+                            <img class="grid-img-title" src="images/titles/thrones.png" />
+                            <img class="grid-img" src="images/covers/thrones.jpg" />  
+                        </div>
+                        </a>
+            
+                        <div class="movie-info">
+                            <div class="fav-icon"></div>
+                            <p class="movie-stars">&#x1f7c9 &#x1f7c9 &#x1f7c9 &#x1f7c9 &#x1f7c9</p>
+                            <p class="movie-title">Juego de tronos</p>
+                            <p class="movie-year">2011</p>
+                            <p class="movie-synopsis">La historia se desarrolla en un mundo ficticio de carácter medieval donde hay Siete Reinos. Hay tres líneas argumentales principales:
+                                 la crónica de la guerra civil dinástica por el control de Poniente entre varias familias nobles que aspiran al Trono de Hierro;
+                                  la creciente amenaza de ...
+                                </p>
+                        </div>                     
+                    </div>                   
+                </div>
+                <div class="grid-item">
+                    <a class="details-link" href="details.html">
+                        <div class="movie-wrapper">
+                            <a class="details-link" href="details.html">
+                            <div class="img-wrapper">
+                                <img class="grid-img-title" src="images/titles/vikings.png" />
+                                <img class="grid-img" src="images/covers/vikings.jpg" /> 
+                            </div>  
+                            </a>
+                            <div class="movie-info">
+                                <div class="fav-icon"></div>
+                                <p class="movie-stars">&#x1f7c9 &#x1f7c9 &#x1f7c9 &#x1f7c9 &#x1f7c9</p>
+                                <p class="movie-title">Vikingos</p>
+                                <p class="movie-year">2013</p>
+                                <p class="movie-synopsis">Narra las aventuras del héroe Ragnar Lothbrok, de sus hermanos vikingos y su familia,
+                                    cuando él se subleva para convertirse en el rey de las tribus vikingas.
+                                    Además de ser un guerrero valiente, Ragnar encarna las tradiciones nórdicas de la devoción a los dioses.
+                                    Según la leyenda era descendiente directo del dios Odín
+                                </p>
+                            </div>                                      
+                        </div>
+                </div>
+                <div class="grid-item">
+                    <a class="details-link" href="details.html">
+                        <div class="movie-wrapper">
+                            <a class="details-link" href="details.html">
+                            <div class="img-wrapper">
+                                <img class="grid-img-title" src="images/titles/motel.png" />
+                                <img class="grid-img" src="images/covers/motel.jpg" />     
+                            </div> 
+                            </a>
+                        
+                            <div class="movie-info">
+                                <div class="fav-icon"></div>
+                                <p class="movie-stars">&#x1f7c9 &#x1f7c9 &#x1f7c9 &#x1f7c9 &#x1f7c9</p>
+                                <p class="movie-title">Bates motel</p>
+                                <p class="movie-year">2013</p>
+                                <p class="movie-synopsis">Precuela contemporánea de la película "Psicosis", que nos hace un retrato íntimo de cómo se desarrolla la psique de Norman Bates durante sus años de adolescencia.
+                                    Los fans descubrirán su historia de trasfondo oscuro y retorcido y conocerán de primera mano cuán profunda...
+                                </p>
+                            </div>                                         
+                        </div>
+                </div>
+                <div class="grid-item">
+                    <a class="details-link" href="details.html">
+                        <div class="movie-wrapper">
+                            <a class="details-link" href="details.html">
+            
+                            <div class="img-wrapper">
+                                <img class="grid-img-title" src="images/titles/braveheart.png" />
+                                <img class="grid-img" src="images/covers/braveheart.jpg" />    
+                            </div> 
+                            </a>
+                            <div class="movie-info">
+                                <div class="fav-icon"></div>
+                                <p class="movie-stars">&#x1f7c9 &#x1f7c9 &#x1f7c9 &#x1f7c9 &#x1f7c9</p>
+                                <p class="movie-title">Braveheart</p>
+                                <p class="movie-year">1995</p>
+                                <p class="movie-synopsis">En el siglo XIV, los escoceses viven oprimidos por los gravosos tributos y las injustas leyes impuestas por los ingleses.
+                                    William Wallace es un joven escocés que regresa a su tierra despues de muchos años de ausencia. Siendo un niño, toda su familia fue asesinada
+                                    por...
+                                </p>
+                            </div>                   
+                        </div>
+                </div>
+                <div class="grid-item">
+                    <div class="movie-wrapper">
+                        <a class="details-link" href="details.html">
+                        <div class="img-wrapper">
+                            <img class="grid-img-title-left" src="images/titles/godfather.png" />
+                            <img class="grid-img" src="images/covers/godfather.jpg" />  
+                        </div>  
+                        </a>                        
+                        <div class="movie-info">
+                            <div class="fav-icon"></div>
+                            <p class="movie-stars">&#x1f7c9 &#x1f7c9 &#x1f7c9 &#x1f7c9 &#x1f7c9</p>
+                            <p class="movie-title">El padrino</p>
+                            <p class="movie-year">1972</p>
+                            <p class="movie-synopsis">América, años 40. Don Vito Corleone (Marlon Brando) es el respetado y temido jefe de una de las cinco familias de la mafia de Nueva York.
+                                 Tiene cuatro hijos: Connie (Talia Shire), el impulsivo Sonny (James Caan), el pusilánime Fredo (John Cazale) y Michael (Al Pacino)...
+                                </p>
+                        </div>              
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="movie-wrapper">
+                        <a class="details-link" href="details.html">
+            
+                        <div class="img-wrapper">
+                            <img class="grid-img-title" src="images/titles/getout.png" />
+                            <img class="grid-img" src="images/covers/getout.jpg" />    
+                        </div> 
+                        </a>
+                        <div class="movie-info">
+                            <div class="fav-icon"></div>
+                            <p class="movie-stars">&#x1f7c9 &#x1f7c9 &#x1f7c9 </p>
+                            <p class="movie-title">Déjame salir</p>
+                            <p class="movie-year">2017</p>
+                            <p class="movie-synopsis">Un joven afroamericano visita a la familia de su novia blanca, un matrimonio adinerado.
+                                Para Chris (Daniel Kaluuya) y su novia Rose (Allison Williams) ha llegado el momento de conocer a los futuros suegros,
+                                 por lo que ella le invita a pasar un fin de semana en el campo con sus ...
+                               </p>
+                        </div>             
+                             
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="movie-wrapper">
+                        <a class="details-link" href="details.html">
+                        <div class="img-wrapper">
+                            <img class="grid-img-title" src="images/titles/snatch.png" />
+                            <img class="grid-img" src="images/covers/snatch.jpg" />  
+                        </div> 
+                        </a>
+                        <div class="movie-info">
+                            <div class="fav-icon"></div>
+                            <p class="movie-stars">&#x1f7c9 &#x1f7c9 &#x1f7c9 &#x1f7c9 &#x1f7c9</p>
+                            <p class="movie-title">Snatch. Cerdos y diamantes</p>
+                            <p class="movie-year">2000</p>
+                            <p class="movie-synopsis">Franky es un ladrón de diamantes que tiene que entregar un valioso ejemplar a su jefe Avi, pero, antes de hacerlo,
+                                se deja convencer por un tal Boris para apostar en un combate ilegal de boxeo. En realidad, se trata de una trampa para arrebatarle el 
+                                diamante. Cuando Avi se...
+                                </p>
+                        </div>      
+                                     
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="movie-wrapper">
+                        <img class="grid-img-title" src="images/titles/vikings.png" />
+                        <img class="grid-img" src="images/covers/vikings.jpg" />                  
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="movie-wrapper">
+                        <img class="grid-img-title" src="images/titles/vikings.png" />
+                        <img class="grid-img" src="images/covers/vikings.jpg" />                  
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="movie-wrapper">
+                        <img class="grid-img-title" src="images/titles/vikings.png" />
+                        <img class="grid-img" src="images/covers/vikings.jpg" />                  
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="movie-wrapper">
+                        <img class="grid-img-title" src="images/titles/vikings.png" />
+                        <img class="grid-img" src="images/covers/vikings.jpg" />                  
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="movie-wrapper">
+                        <img class="grid-img-title" src="images/titles/vikings.png" />
+                        <img class="grid-img" src="images/covers/vikings.jpg" />                  
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="movie-wrapper">
+                        <img class="grid-img-title" src="images/titles/vikings.png" />
+                        <img class="grid-img" src="images/covers/vikings.jpg" />                  
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="movie-wrapper">
+                        <img class="grid-img-title" src="images/titles/vikings.png" />
+                        <img class="grid-img" src="images/covers/vikings.jpg" />                  
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="movie-wrapper">
+                        <img class="grid-img-title" src="images/titles/vikings.png" />
+                        <img class="grid-img" src="images/covers/vikings.jpg" />                  
+                    </div>
+                </div>                                                                    
+           </div>
+       </section>
+
+   </main>
+
+</body>
+</html>

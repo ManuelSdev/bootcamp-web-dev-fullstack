@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Templates & slots</title>
+    <style>
+      details {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Defino una plantilla para pintar mis definiciones -->
+    <template id="sample-template">
+      <style>
+        details {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        .name {
+          font-weight: bold;
+          color: #217ac0;
+          font-size: 120%;
+        }
+        h4 {
+          margin: 10px 0 -8px 0;
+        }
+
+        h4 span {
+          background-color: #217ac0;
+          color: white;
+          padding: 5px;
+        }
+      </style>
+      <details>
+        <summary>
+          <span>
+            <code class="name">
+              <slot name="element-name">NECESITA UN NOMBRE</slot>
+            </code>
+            <i class="desc">
+              <slot name="description">NECESITA UNA DESCRIPCIÓN</slot>
+            </i>
+          </span>
+        </summary>
+        <div class="attributes">
+          <h4><span>Atributos</span></h4>
+          <slot name="attributes"><p>Ninguno</p></slot>
+        </div>
+      </details>
+      <hr />
+    </template>
+
+    <sample-element>
+      <span slot="element-name">slot</span>
+
+      <span slot="description">
+        Un marcador de posición dentro de un componente web que los usuarios
+        pueden rellenar con su propio marcado, con el efecto de componer
+        diferentes árboles DOM juntos.
+      </span>
+
+      <dl slot="attributes">
+        <dt>name</dt>
+        <dd>El atributo name del slot.</dd>
+
+        <dt>description</dt>
+        <dd>La descripción del término incluido en <i>name</i>.</dd>
+
+        <dt>attributes</dt>
+        <dd>Para explicar las tres posiciones de slot.</dd>
+      </dl>
+    </sample-element>
+
+    <sample-element>
+      <span slot="element-name">template</span>
+
+      <span slot="description">
+        Para crear contenido con la misma estructura.
+      </span>
+    </sample-element>
+  </body>
+</html>
+
+<script src="sample-element.js"></script>

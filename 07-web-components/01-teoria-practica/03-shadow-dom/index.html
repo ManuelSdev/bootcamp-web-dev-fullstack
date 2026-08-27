@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Wars Films</title>
+    <style>
+      .film .header #episode {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Star Wars Films</h1>
+    <kc-swapi id="swapi"></kc-swapi>
+
+    <template id="starwars-films">
+      <style>
+        .film {
+          border: solid thin blue;
+          padding: 0.5rem;
+          margin: 0.25rem 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        #episode::after {
+          content: '.';
+        }
+        #title {
+          font-size: 1.1rem;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+        #release {
+          font-size: 0.85rem;
+          color: gray;
+        }
+        .director {
+          text-align: right;
+          font-style: italic;
+          text-transform: capitalize;
+          font-size: 0.9rem;
+          margin: 0.5rem 0.5rem 0 0;
+        }
+      </style>
+      <div class="film">
+        <div class="header">
+          <span id="episode"></span>
+          <span id="title"></span>
+          <span id="release"></span>
+        </div>
+        <div class="director">by <span id="director"></span></div>
+      </div>
+    </template>
+
+    <div class="film">
+      <div class="header">
+        <div id="episode">Este texto se verá en color...</div>
+      </div>
+    </div>
+  </body>
+  <script src="swapi.js"></script>
+</html>

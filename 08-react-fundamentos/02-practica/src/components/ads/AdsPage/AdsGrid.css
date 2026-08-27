@@ -1,0 +1,19 @@
+.ads-custom-grid {
+  display: grid;
+  grid-template-columns: 22% 22% 22% 22%;
+  grid-template-rows: auto auto auto auto;
+  column-gap: 2%;
+  row-gap: 20px;
+  justify-items: stretch;
+  align-items: stretch;
+  justify-content: center;
+  background-color: blue;
+}
+
+.adsGrid2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  background-color: blue;
+}

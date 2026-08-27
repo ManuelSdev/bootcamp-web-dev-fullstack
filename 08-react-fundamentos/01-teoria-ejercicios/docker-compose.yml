@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  app:
+    image: davidjj76/react-twitter
+    build: .
+    container_name: app
+    ports:
+      - 5000:80
+    restart: unless-stopped

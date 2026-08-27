@@ -1,0 +1,134 @@
+.movies{
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.grid-container
+{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(320px, 2fr));  
+    grid-gap: 5px 5px;
+    
+}
+
+.grid-item
+{
+    position: relative;
+    border-radius: 5px;
+    background-image: url("../images/movies/carousel/thrones.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.movie-wrapper{
+    transition: 0.2s ease-in-out;
+}
+
+.img-wrapper
+{
+    position: relative;
+}
+
+.grid-img-title
+{
+    position: absolute;
+    bottom:10px; 
+}
+
+.grid-img-title-top
+{
+    position: absolute;
+    max-width: 75%;
+    /*Centrado mediante combinación de las cuatro propiedades siguientes*/
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    top:0px;  
+}
+
+/*Titulos a la izquierda de la carátula*/
+.grid-img-title-left
+{
+    position: absolute;
+    left:-80px;
+    bottom: 10px; 
+    
+}
+
+/*Información dinámica de las películas*/
+.movie-info{
+    height: 0;
+    overflow: hidden;
+    transition:0.3s;
+    font-family: 'Hammersmith One', serif;
+    color: seashell;
+
+}
+
+.movie-synopsis{
+    height: 30px;
+    text-align: justify;
+    
+    
+}
+/*Transiciones basadas en hover*/
+.grid-item:hover .movie-wrapper{
+    /*transition-delay: 5s;*/
+    z-index: 2;
+    height: 500px;
+    position: absolute;
+    top:-60px;
+    /*Permite superposición sobre el resto de elementos que tienen z-index: 1 por defecto*/
+    
+    background-color: #345764;
+    
+}
+
+.grid-item:hover  .movie-info
+{
+    overflow: visible;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    
+   }
+
+.fav-icon{
+    width: 5rem;
+    height: 5rem;
+    background-image: url(../images/icons/heart-white.png);
+    background-position:center;
+    background-size:cover;
+    position: absolute;
+    right: 2rem;
+    
+    
+}
+
+.fav-icon:hover, .fav-icon:active{
+   
+    width: 5rem;
+    height: 5rem;
+    background-image: url(../images/icons/heart-red.png);
+    background-position:center;
+    background-size:cover;
+    position: absolute;
+    right: 2rem;
+    
+}
+
+
+
+
+
+
+
+/*Hace que el vídeo se muestre*/
+
+/*
+.movie-wrapper:hover > .grid-img{
+    width: 200px;
+    min-width: 5px;
+}
+
+*/

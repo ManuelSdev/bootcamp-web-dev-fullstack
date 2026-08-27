@@ -1,0 +1,186 @@
+/* Bloque navbar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.75);
+  height: var(--header-height);
+  z-index: 10;
+  min-width: 320px;
+}
+
+/* Icono del menú */
+#burger-checkbox {
+  display: none;
+}
+
+#burger-checkbox {
+  z-index: 3;
+  position: absolute;
+  top: 1.5rem;
+  left: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  opacity: 0;
+}
+
+#burger-checkbox:checked ~ .navbar-list {
+  display: inherit;
+}
+
+.burger-label {
+  z-index: 3;
+  position: absolute;
+  top: 1.5rem;
+  left: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  font-size: 2rem;
+}
+
+.burger-label:before {
+  content: '';
+  position: absolute;
+  background: var(--alt-color);
+  width: 1em;
+  height: 0.15em;
+  left: 0.1em;
+  top: 0.25em;
+  box-shadow: 0 0.25em 0 0 var(--alt-color), 0 0.5em 0 0 var(--alt-color);
+}
+
+/* Menú abierto */
+.navbar-list {
+  list-style-type: none;
+  display: none;
+  flex-direction: column;
+  height: 100vh;
+  padding-left: 0;
+  background: var(--bg-color);
+  width: 80%;
+  max-width: 280px;
+
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.navbar-item > a {
+  display: block;
+  padding: 1rem;
+  transition: all ease-in 0.15s;
+}
+
+.navbar-item:hover > a {
+  background: var(--brand-color);
+  color: var(--bg-color);
+}
+
+.search-form {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: var(--header-height);
+  padding: 1rem;
+  transition: all ease-in 0.5s;
+  justify-content: flex-end;
+}
+
+.search-input {
+  /* Le restamos el padding del formulario al alto del navbar
+     para conseguir un tamaño cuadrado */
+  width: calc(var(--header-height) - 2rem);
+  border: solid 1px var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: var(--text-color);
+  padding: 0.5rem;
+  font-size: 1rem;
+  transition: width ease-in 0.5s;
+  position: relative;
+}
+
+.search-input ~ label {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: var(--header-height);
+  line-height: var(--header-height);
+  width: var(--header-height);
+  background-color: transparent;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0.25rem;
+}
+
+.search-input:focus {
+  width: 100%;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.search-input:focus ~ label {
+  display: none;
+}
+
+.search-submit {
+  width: 0;
+  border: 0;
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  background-color: var(--brand-color);
+  color: var(--brand-overlay);
+  font-size: 1.5rem;
+  transition: width ease-in-out 0.5s;
+  padding: 0;
+}
+
+.search-input:focus ~ .search-submit {
+  width: calc(var(--header-height) - 2rem);
+  padding: 0.5rem;
+}
+
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+  .burger-label {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+  }
+
+  .navbar-list {
+    flex: 1 0;
+    height: unset;
+    width: unset;
+    max-width: unset;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background: transparent;
+  }
+
+  .search-form {
+    position: unset;
+  }
+
+  .search-form .search-input {
+    width: auto;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .search-form .search-submit {
+    width: auto;
+    padding: 0.5rem;
+  }
+}
+@media (min-width: 1200px) {
+}

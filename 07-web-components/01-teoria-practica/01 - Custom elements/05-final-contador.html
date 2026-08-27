@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+  </head>
+  <body>
+    <kc-counter id="tony-counter" value="1"></kc-counter>
+    <hr />
+    <kc-counter value="2"></kc-counter>
+    <hr />
+    <kc-counter value="3"></kc-counter>
+    <hr />
+    <kc-counter value="4"></kc-counter>
+    <hr />
+    <kc-counter value="5"></kc-counter>
+
+    <div>El contador ha cambiado a <span id="nuevo-valor"></span></div>
+  </body>
+</html>
+
+<script src="counter.js"></script>
+
+<script>
+  const counter = document.querySelector('#tony-counter');
+  counter.addEventListener(
+    'valueChanged',
+    (e) => (document.querySelector('#nuevo-valor').innerText = e.detail)
+  );
+</script>

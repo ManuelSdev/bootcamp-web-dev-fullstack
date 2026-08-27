@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Segunda página con el popup</title>
+  </head>
+  <body>
+    <h1 id="title">Pasa por aquí</h1>
+
+    <kc-popup id="otro-popup">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ipsa
+        eius commodi fugit fuga magni incidunt sapiente iste expedita aliquid.
+      </p>
+      <blockquote>
+        odio voluptatem laborum, deleniti impedit doloribus hic cumque quam
+        tempore?
+      </blockquote>
+    </kc-popup>
+    <script src="./popup.component.js"></script>
+
+    <script>
+      const popup = document.getElementById('otro-popup');
+      popup.open = true;
+
+      popup.addEventListener('popup-closed', () => {
+        console.log('El popup se ha cerrado');
+        const title = document.getElementById('title');
+        title.innerText = 'Cerrado!!';
+      });
+    </script>
+  </body>
+</html>

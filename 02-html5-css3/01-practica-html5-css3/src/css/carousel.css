@@ -1,0 +1,82 @@
+.main-page{
+    width: 100%;
+    
+}
+
+#video-trailer
+{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.carousel
+{
+    background-color: green;
+    
+}
+#scroll-block
+{
+  
+    background-color: hotpink;
+   
+}
+
+.test
+{
+    
+    background-color: grey;
+    position: relative;
+    overflow: hidden;
+}
+.carousel-scroll
+{
+    background-color: wheat;
+    
+    position: relative;
+   /* left: -500px;*/
+    
+    
+}
+.carousel-list
+{
+    background-color: turquoise;
+    height: 100%;
+    margin:0;
+    z-index: 1;
+    display: flex;
+    
+    width: 100%;
+    
+  
+    
+}
+
+.carousel-item
+{
+    margin-right: 15px;
+}
+
+.carousel-img
+{
+    height: 180px;
+    width: 320px;
+    min-width: 320px;
+    margin:0;
+    padding: 0;
+    
+}
+
+.scroll-button
+{
+    background-color: red;;
+    width: 50px;
+    height: 180px;
+    z-index: 2;
+    position: absolute;
+    top:0px;
+    float: right;
+    
+    
+}
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hammersmith One">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css">
+
+    <title>Document</title>
+</head>
+<body>
+   <header class="header">
+       <nav id="nav" class="nav">
+           <div class="nav-left-wrapper">
+                <a class="logo-icon" href="index.html">
+                    <img class="logo-icon" src="images/netflix.png">
+                </a>
+                <!--
+                <form class="searchBar">
+                    <imput type="text" id="searchImput" class="searchImput"/>
+                    <button type="submit" class="searchButtom"></button>
+                </form>
+                -->
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="">Novedades</a></li>
+                    <li class="nav-item"><a href="">Series</a></li>
+                    <li class="nav-item"><a href="">Péliculas</a></li>
+                    <li class="nav-item"><a href="">Favoritos</a></li>
+                </ul>
+           </div>
+           <div class="nav-right-wrapper">
+                <div class="search">
+                    <img class="search-icon" src="../images/search.png"/>
+                    <form class="search-bar">
+                        <input type="text" id="search-input" class="search-input"/>
+                        <!--<button type="submit" class="search-buttom"></button>-->
+                    </form>
+                </div>
+                <div class="user">
+                    <img class="search-icon" src="images/user.png"/>
+                </div>
+           </div>
+
+       </nav>
+   </header>
+   <main class="main-page">
+       <section id="login">
+         <!--
+          <div class="login-form">
+            <h1>Iniciar sesión</h1>
+            <form
+              action="./enviado.html"
+              method="GET"
+              name="contact-form"
+              id="contact-form"
+              class="contact-form"
+            >
+              <div class="contact-data">
+                <p>
+                  <input type="email" class="input-form-text" name="email" placeholder="Correo electrónico" required /><br />
+                </p>
+                <p>
+                  <input type="password" class="input-form-text" name="pass" placeholder="Contraseña"/><br />
+                </p>
+              </div>
+              <p class="actions">
+                <input type="submit" class="submit-button"value="Iniciar sesión" />
+              </p>
+              <div class="forgot-access">
+                <a class="forgot-access-link" href="#"> ¿Olvidaste tu contraseña?
+                </a>
+              </div>
+            </form>
+         </div>
+         -->
+         
+
+         <div class="form-wrapper">
+          <div class="logo">Iniciar sesión</div>
+          <div class="login-item">
+            <form action="" method="" class="form-login">
+              <div class="form-field">
+                <!--Atributo required exige completar campo con condiciones-->
+                <input  type="email" class="form-input" name="email" placeholder="Correo electrónico" >
+              </div>
+      
+              <div class="form-field">
+                <input  type="password" class="form-input" placeholder="Contraseña" >
+              </div>
+        
+              <a href="main.html">
+              <div class="form-field">
+                
+                  <input type="button" class="form-input" value="Iniciar sesión">
+               
+                
+              </div>
+            </a>
+              <div class="forgot-access">
+                <a class="forgot-access-link" href="#"> ¿Olvidaste tu contraseña?</a>
+              </div>
+            </form>
+          </div>
+      </div>
+ 
+
+       </section>
+
+   </main>
+
+</body>
+</html>
